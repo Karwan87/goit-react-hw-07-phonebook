@@ -1,6 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { nanoid } from 'nanoid';
-import axios from 'axios';
 import { fetchContacts, addContact, deleteContact } from 'api';
 
 const initialState = {
