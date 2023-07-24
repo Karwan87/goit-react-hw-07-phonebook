@@ -36,6 +36,7 @@ const ContactForm = () => {
         type="text"
         placeholder="Name"
         value={name}
+        pattern="^[A-Za-z.'\- ]+$"
         onChange={e => setName(e.target.value)}
       />
       <input
@@ -43,6 +44,7 @@ const ContactForm = () => {
         type="tel"
         placeholder="Phone number"
         value={phone}
+        pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
         onChange={e => setPhone(e.target.value)}
       />
       <div className={styles.ButtonContainer}>
